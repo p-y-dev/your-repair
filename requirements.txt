@@ -1,0 +1,8 @@
+Django
+libsass
+django-compressor
+psycopg2
+Pillow
+easy-thumbnails
+Unidecode
+requests
