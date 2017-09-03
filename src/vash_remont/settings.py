@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'compressor',
+    'easy_thumbnails',
+
+    'vash_remont.accounts',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +59,9 @@ ROOT_URLCONF = 'vash_remont.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, '../templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -84,6 +91,7 @@ DATABASES = {
     }
 }
 
+AUTH_USER_MODEL = 'accounts.User'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -118,5 +126,28 @@ USE_L10N = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "../frontend"),
+]
 
+STATIC_ROOT = os.path.join(BASE_DIR, '../var/static')
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, '../var/media')
+MEDIA_URL = '/media/'
+
+FONTS_ROOT = os.path.join(BASE_DIR, '../frontend/fonts')
+
+
+# compressor settings
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+)
+
+COMPRESS_ENABLED = not DEBUG
+COMPRESS_ROOT = STATIC_ROOT
+COMPRESS_PRECOMPILERS = (
+    ['text/x-sass', 'sassc --style compressed {infile} {outfile}'],
+)
