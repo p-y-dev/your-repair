@@ -1,11 +1,13 @@
-{% extends "main.html" %}
+{% extends "base.html" %}
 
 {% load staticfiles %}
 
 {% block title %}Ваш ремонт{% endblock %}
 
 {% block styles %}
-    <link href="{% static 'styles/main.sass' %}" rel="stylesheet" type="text/x-sass" />
+    <link href="{% static 'styles/base.sass' %}" rel="stylesheet" type="text/x-sass" />
+    <link href="{% static 'styles/index/main.sass' %}" rel="stylesheet" type="text/x-sass" />
+    <link href="{% static 'styles/index/advantages.sass' %}" rel="stylesheet" type="text/x-sass" />
     {{ block.super }}
 {% endblock %}
 
@@ -14,7 +16,6 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <h1>{{ test }}</h1>
-    </div>
+    {% include "index_div/main.html" %}
+    {% include "index_div/advantages.html" %}
 {% endblock %}
