@@ -7,6 +7,8 @@ header {
   background-color: rgba(0, 0, 0, 0.75);
   height: 76px; }
   header .logo {
+    width: 97px;
+    height: 53px;
     float: left; }
   header .menu {
     list-style: none;
@@ -25,5 +27,17 @@ header {
       header .menu li .phone {
         font-family: "GothamProBlack";
         color: #ffd900; }
+@media(max-width: 1201px) {
+  header {
+    height: 62px; }
+    header .logo {
+      width: 75px;
+      height: 40px; }
+    header .menu {
+      margin: 10px 0px 0px 0px; }
+      header .menu li {
+        margin-left: 55px; }
+        header .menu li a {
+          font-size: 17px; } }
 
 /*# sourceMappingURL=header.css.map */
