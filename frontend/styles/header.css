@@ -1,0 +1,29 @@
+@import url(fonts.css);
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 76px; }
+  header .logo {
+    float: left; }
+  header .menu {
+    list-style: none;
+    float: left;
+    padding: 0px;
+    margin: 15px 0px 0px 0px; }
+    header .menu li {
+      float: left;
+      margin-left: 66px; }
+      header .menu li a {
+        text-decoration: none !important;
+        font-size: 20px; }
+      header .menu li .item {
+        font-family: "GothamProBold";
+        color: white; }
+      header .menu li .phone {
+        font-family: "GothamProBlack";
+        color: #ffd900; }
+
+/*# sourceMappingURL=header.css.map */

@@ -2,8 +2,7 @@
 .main-div {
   background-image: url(../../images/back_1.jpg);
   height: 100vh;
-  padding-top: 35vh;
-  padding-left: 20%; }
+  padding-top: 35vh; }
   .main-div h3 {
     color: white;
     text-transform: uppercase;
