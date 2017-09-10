@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AACQ,yBAAc;AAEtB,WAAW;EACP,gBAAgB,EAAE,KAAK;EACvB,MAAM,EAAE,KAAK",
-"sources": ["advantages.sass"],
+"mappings": "AACQ,yBAAc;ACCtB,KAAK;EACD,OAAO,EAAE,eAAe;;ADA5B,WAAW;EACP,gBAAgB,EAAE,KAAK;EACvB,MAAM,EAAE,KAAK",
+"sources": ["advantages.sass","../base.sass"],
 "names": [],
 "file": "advantages.css"
 }

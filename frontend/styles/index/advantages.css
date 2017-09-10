@@ -1,4 +1,7 @@
 @import url(../fonts.css);
+.none {
+  display: none !important; }
+
 .advantages {
   background-color: white;
   height: 800px; }

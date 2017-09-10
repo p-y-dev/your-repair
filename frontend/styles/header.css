@@ -1,4 +1,7 @@
 @import url(fonts.css);
+.none {
+  display: none !important; }
+
 header {
   position: fixed;
   width: 100%;
@@ -10,34 +13,100 @@ header {
     width: 97px;
     height: 53px;
     float: left; }
-  header .menu {
+  header .fa-list, header .fa-times, header .menu-mobile, header .phone-mobile {
+    display: none; }
+  header .menu-desktop {
+    display: block;
     list-style: none;
     float: left;
     padding: 0px;
     margin: 15px 0px 0px 0px; }
-    header .menu li {
+    header .menu-desktop li {
       float: left;
-      margin-left: 66px; }
-      header .menu li a {
+      margin-left: 40px; }
+      header .menu-desktop li a {
         text-decoration: none !important;
+        padding: 0px 15px 0px 15px;
         font-size: 20px; }
-      header .menu li .item {
+    header .menu-desktop .active {
+      background-color: #ffd900; }
+      header .menu-desktop .active a {
+        color: black !important; }
+    header .menu-desktop .item {
+      transition: 0.3s;
+      border-radius: 15px; }
+      header .menu-desktop .item a {
+        transition: 0.3s;
         font-family: "GothamProBold";
         color: white; }
-      header .menu li .phone {
-        font-family: "GothamProBlack";
-        color: #ffd900; }
-@media(max-width: 1201px) {
+      header .menu-desktop .item:hover {
+        background-color: #ffd900; }
+        header .menu-desktop .item:hover a {
+          color: black; }
+    header .menu-desktop .phone a {
+      padding: 0px;
+      font-family: "GothamProBlack";
+      color: #ffd900; }
+@media(max-width: 1199px) {
   header {
     height: 62px; }
     header .logo {
       width: 75px;
       height: 40px; }
-    header .menu {
+    header .menu-desktop {
       margin: 10px 0px 0px 0px; }
-      header .menu li {
-        margin-left: 55px; }
-        header .menu li a {
+      header .menu-desktop li {
+        margin-left: 27px; }
+        header .menu-desktop li a {
           font-size: 17px; } }
+@media(max-width: 991px) {
+  header {
+    height: 62px; }
+    header .logo {
+      width: 75px;
+      height: 40px; }
+    header .menu-desktop {
+      margin: 10px 0px 0px 0px; }
+      header .menu-desktop li {
+        margin-left: 17px; }
+        header .menu-desktop li a {
+          padding: 0px 8px 0px 8px;
+          font-size: 14px; } }
+@media(max-width: 767px) {
+  header .menu-desktop {
+    display: none; }
+  header .fa-list, header .fa-times {
+    display: block;
+    float: right;
+    color: white;
+    font-size: 30px;
+    margin-top: 7px; }
+  header .fa-times {
+    color: #ffd900; }
+  header .phone-mobile {
+    display: block;
+    font-family: "GothamProBlack";
+    color: #ffd900;
+    text-decoration: none !important;
+    margin-top: 15px; }
+  header .menu-mobile {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0px 0px 10px 35px;
+    margin-top: 52px;
+    background-color: rgba(0, 0, 0, 0.75);
+    list-style: none; }
+    header .menu-mobile .active a {
+      color: #ffd900; }
+    header .menu-mobile li {
+      margin-top: 10px; }
+      header .menu-mobile li a {
+        text-decoration: none !important;
+        font-family: "GothamProBold";
+        color: white; }
+      header .menu-mobile li:hover a {
+        color: #ffd900; } }
 
 /*# sourceMappingURL=header.css.map */

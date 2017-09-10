@@ -3,18 +3,29 @@
 <header>
     <div class="container-fluid">
         <div class="container">
-            <a href="#">
+            <a href="/">
                 <img class="img-responsive logo" src="{% static "images/logo.png" %}">
             </a>
 
-            <ul class="menu">
-                <li><a href="#" class="item">Главная</a></li>
-                <li><a href="#" class="item">О компании</a></li>
-                <li><a href="#" class="item">Услуги</a></li>
-                <li><a href="#" class="item">Работы</a></li>
-                <li><a href="#" class="item">Отзывы</a></li>
-                <li><a href="tel:8-913-744-35-07" class="phone">8-913-744-35-07</a></li>
+            <ul class="menu-desktop">
+                <li class="item active"><a href="#">Главная</a></li>
+                <li class="item"><a href="#">О компании</a></li>
+                <li class="item"><a href="#">Услуги</a></li>
+                <li class="item"><a href="#">Работы</a></li>
+                <li class="item"><a href="#">Отзывы</a></li>
+                <li class="phone"><a href="tel:8-913-744-35-07">8-913-744-35-07</a></li>
             </ul>
+
+            <ul class="menu-mobile none">
+                <li class="item-mobile active"><a href="#">Главная</a></li>
+                <li class="item-mobile"><a href="#">О компании</a></li>
+                <li class="item-mobile"><a href="#">Услуги</a></li>
+                <li class="item-mobile"><a href="#">Работы</a></li>
+                <li class="item-mobile"><a href="#">Отзывы</a></li>
+                <a class="phone-mobile" href="tel:8-913-744-35-07">8-913-744-35-07</a>
+            </ul>
+            <i class="fa fa-list" aria-hidden="true"></i>
+            <i class="fa fa-times none" aria-hidden="true"></i>
         </div>
     </div>
 </header>

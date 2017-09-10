@@ -14,7 +14,11 @@ header
         height: 53px
         float: left
 
-    .menu
+    .fa-list, .fa-times, .menu-mobile, .phone-mobile
+        display: none
+
+    .menu-desktop
+        display: block
         list-style: none
         float: left
         padding: 0px
@@ -22,32 +26,117 @@ header
 
         li
             float: left
-            margin-left: 66px
+            margin-left: 40px
 
             a
                 text-decoration: none !important
+                padding: 0px 15px 0px 15px
                 font-size: 20px
 
-            .item
+        .active
+            background-color: $yellow
+
+            a
+                color: black !important
+
+        .item
+            transition: .3s
+            border-radius: 15px
+
+            a
+                transition: .3s
                 font-family: "GothamProBold"
                 color: white
 
-            .phone
+            &:hover
+                background-color: $yellow
+
+                a
+                    color: black
+        .phone
+            a
+                padding: 0px
                 font-family: "GothamProBlack"
                 color: $yellow
 
-    @media(max-width: 1201px)
+
+    @media(max-width: 1199px)
         height: 62px
 
         .logo
             width: 75px
             height: 40px
 
-        .menu
+        .menu-desktop
             margin: 10px 0px 0px 0px
 
             li
-                margin-left: 55px
+                margin-left: 27px
 
                 a
                     font-size: 17px
+
+    @media(max-width: 991px)
+        height: 62px
+
+        .logo
+            width: 75px
+            height: 40px
+
+        .menu-desktop
+            margin: 10px 0px 0px 0px
+
+            li
+                margin-left: 17px
+
+                a
+                    padding: 0px 8px 0px 8px
+                    font-size: 14px
+
+    @media(max-width: 767px)
+
+        .menu-desktop
+            display: none
+
+        .fa-list, .fa-times
+            display: block
+            float: right
+            color: white
+            font-size: 30px
+            margin-top: 7px
+
+        .fa-times
+            color: $yellow
+
+        .phone-mobile
+            display: block
+            font-family: "GothamProBlack"
+            color: $yellow
+            text-decoration: none !important
+            margin-top: 15px
+
+        .menu-mobile
+            display: block
+            position: absolute
+            width: 100%
+            left: 0
+            padding: 0px 0px 10px 35px
+            margin-top: 52px
+            background-color: rgba(0,0,0,0.75)
+            list-style: none
+
+            .active a
+                color: $yellow
+
+            li
+                margin-top: 10px
+
+                a
+                    text-decoration: none !important
+                    font-family: "GothamProBold"
+                    color: white
+
+
+                &:hover
+                    a
+                        color: $yellow
