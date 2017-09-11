@@ -2,5 +2,74 @@
 @import "../fonts.css"
 
 .advantages
-    background-color: white
-    height: 800px
+    .advantages-content
+        padding: 40px 0px 40px 0px
+
+    h3
+        font-family: "GothamProBlack"
+        color: black
+        text-align: center
+        text-transform: uppercase
+        margin: 0px 0px 40px 0px
+
+        span
+            color: $yellow
+
+    .advantage
+        width: 20%
+        float: left
+
+        img
+            display: block
+            margin: 0 auto
+
+        p
+            text-align: center
+            font-family: "GothamProRegular"
+            font-size: 24px
+            margin: 30px 0px 0px 0px
+
+    @media(max-width: 1199px)
+        .advantages-content
+            padding: 25px 0px 25px 0px
+
+        h3
+            margin: 0px 0px 25px 0px
+
+        .advantage
+            p
+                font-size: 20px
+                margin: 15px 0px 0px 0px
+
+    @media(max-width: 991px)
+        h3
+            font-size: 24px
+
+        .advantage
+            img
+                width: 60px
+                height: 60px
+
+            p
+                font-size: 16px
+
+    @media(max-width: 767px)
+        h3
+            margin-bottom: 30px
+            font-size: 18px
+
+        .advantage
+            width: 50%
+            margin-bottom: 30px
+
+            img
+                width: 70px
+                height: 72px
+
+            p
+                font-size: 15px
+                margin: 5px 0px 0px 0px
+
+        .advantage-last-mobile
+            width: 100%
+
