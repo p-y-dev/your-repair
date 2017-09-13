@@ -9,6 +9,7 @@
     <link href="{% static 'styles/index/main.sass' %}" rel="stylesheet" type="text/x-sass" />
     <link href="{% static 'styles/index/advantages.sass' %}" rel="stylesheet" type="text/x-sass" />
     <link href="{% static 'styles/index/order_of_work.sass' %}" rel="stylesheet" type="text/x-sass" />
+    <link href="{% static 'styles/index/services.sass' %}" rel="stylesheet" type="text/x-sass" />
     {{ block.super }}
 {% endblock %}
 
@@ -20,4 +21,5 @@
     {% include "index_div/main.html" %}
     {% include "index_div/advantages.html" %}
     {% include "index_div/order_of_work.html" %}
+    {% include "index_div/services.html" %}
 {% endblock %}
