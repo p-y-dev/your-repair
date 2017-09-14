@@ -1,0 +1,61 @@
+@import url(../fonts.css);
+.none {
+  display: none !important; }
+
+h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "GothamProBold";
+  margin-bottom: 15px;
+  position: relative; }
+  h3 span {
+    color: #ffd900; }
+
+.content-block {
+  padding: 40px 0px 40px 0px; }
+
+@media(max-width: 1199px) {
+  h3 {
+    margin-bottom: 25px; }
+
+  .content-block {
+    padding: 25px 0px 25px 0px; } }
+@media(max-width: 991px) {
+  h3 {
+    font-size: 24px; } }
+@media(max-width: 767px) {
+  h3 {
+    margin-bottom: 20px;
+    font-size: 18px; } }
+.services h3 {
+  color: black;
+  margin: 0px 0px 40px 0px;
+  text-align: center; }
+.services .service {
+  float: left;
+  width: 33.33333%; }
+  .services .service p {
+    text-align: center;
+    font-family: "GothamProRegular";
+    font-size: 24px; }
+  .services .service img {
+    display: block;
+    margin: 0 auto; }
+@media(max-width: 991px) {
+  .services h3 {
+    margin: 0px 0px 40px 0px; }
+  .services .service p {
+    font-size: 18px; }
+  .services .service img {
+    width: 85px;
+    height: 85px; } }
+@media(max-width: 767px) {
+  .services h3 {
+    margin: 0px 0px 18px 0px; }
+  .services .service p {
+    font-size: 14px; }
+  .services .service img {
+    width: 50px;
+    height: 50px; } }
+
+/*# sourceMappingURL=services.css.map */

@@ -1,66 +1,139 @@
-/*
-Error: The line was indented 2 levels deeper than the previous line.
-        on line 7 of base.sass
-        from line 1 of header.sass
+@import url(fonts.css);
+.none {
+  display: none !important; }
 
-2: 
-3: .none
-4:     display: none !important
-5: 
-6: .content-block
-7:         padding: 40px 0px 40px 0px
-8: 
-9: @media(max-width: 1199px)
-10:     h3
-11:         margin-bottom: 25px
-12: 
+h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "GothamProBold";
+  margin-bottom: 15px;
+  position: relative; }
+  h3 span {
+    color: #ffd900; }
 
-Backtrace:
-base.sass:7
-header.sass:1
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:523:in `tree'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:412:in `_to_tree'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:315:in `to_tree'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin.rb:82:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
-/var/lib/gems/2.3.0/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:22:in `load'
-/usr/local/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: The line was indented 2 levels deeper than the previous line.\A         on line 7 of base.sass\A         from line 1 of header.sass\A \A 2: \A 3: .none\A 4:     display: none !important\A 5: \A 6: .content-block\A 7:         padding: 40px 0px 40px 0px\A 8: \A 9: @media(max-width: 1199px)\A 10:     h3\A 11:         margin-bottom: 25px\A 12: "; }
+.content-block {
+  padding: 40px 0px 40px 0px; }
+
+@media(max-width: 1199px) {
+  h3 {
+    margin-bottom: 25px; }
+
+  .content-block {
+    padding: 25px 0px 25px 0px; } }
+@media(max-width: 991px) {
+  h3 {
+    font-size: 24px; } }
+@media(max-width: 767px) {
+  h3 {
+    margin-bottom: 20px;
+    font-size: 18px; } }
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 76px; }
+  header .logo {
+    width: 97px;
+    height: 53px;
+    float: left; }
+  header .fa-list, header .fa-times, header .menu-mobile, header .phone-mobile {
+    display: none; }
+  header .menu-desktop {
+    display: block;
+    list-style: none;
+    float: left;
+    padding: 0px;
+    margin: 15px 0px 0px 0px; }
+    header .menu-desktop li {
+      float: left;
+      margin-left: 40px; }
+      header .menu-desktop li a {
+        text-decoration: none !important;
+        padding: 0px 15px 0px 15px;
+        font-size: 20px; }
+    header .menu-desktop .active {
+      background-color: #ffd900; }
+      header .menu-desktop .active a {
+        color: black !important; }
+    header .menu-desktop .item {
+      transition: 0.3s;
+      border-radius: 15px; }
+      header .menu-desktop .item a {
+        transition: 0.3s;
+        font-family: "GothamProBold";
+        color: white; }
+      header .menu-desktop .item:hover {
+        background-color: #ffd900; }
+        header .menu-desktop .item:hover a {
+          color: black; }
+    header .menu-desktop .phone a {
+      padding: 0px;
+      font-family: "GothamProBlack";
+      color: #ffd900; }
+@media(max-width: 1199px) {
+  header {
+    height: 62px; }
+    header .logo {
+      width: 75px;
+      height: 40px; }
+    header .menu-desktop {
+      margin: 10px 0px 0px 0px; }
+      header .menu-desktop li {
+        margin-left: 25px; }
+        header .menu-desktop li a {
+          font-size: 17px; } }
+@media(max-width: 991px) {
+  header {
+    height: 62px; }
+    header .logo {
+      width: 75px;
+      height: 40px; }
+    header .menu-desktop {
+      margin: 10px 0px 0px 0px; }
+      header .menu-desktop li {
+        margin-left: 14px; }
+        header .menu-desktop li a {
+          padding: 0px 8px 0px 8px;
+          font-size: 14px; } }
+@media(max-width: 767px) {
+  header {
+    background-color: black; }
+    header .menu-desktop {
+      display: none; }
+    header .fa-list, header .fa-times {
+      display: block;
+      float: right;
+      color: white;
+      font-size: 30px;
+      margin-top: 7px; }
+    header .fa-times {
+      color: #ffd900; }
+    header .phone-mobile {
+      display: block;
+      font-family: "GothamProBlack";
+      color: #ffd900;
+      text-decoration: none !important;
+      margin-top: 15px; }
+    header .menu-mobile {
+      display: block;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      padding: 0px 0px 10px 35px;
+      margin-top: 52px;
+      background-color: black;
+      list-style: none; }
+      header .menu-mobile .active a {
+        color: #ffd900; }
+      header .menu-mobile li {
+        margin-top: 10px; }
+        header .menu-mobile li a {
+          text-decoration: none !important;
+          font-family: "GothamProBold";
+          color: white; }
+        header .menu-mobile li:hover a {
+          color: #ffd900; } }
+
+/*# sourceMappingURL=header.css.map */
