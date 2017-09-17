@@ -3,12 +3,12 @@
 
 .reviews
     background: url(../../images/back_4.jpg) center no-repeat
-    height: 776px
+    height: 826px
 
     .reviews-substrate
         position: absolute
         width: 100%
-        height: 776px
+        height: 826px
         background-color: rgba(0,0,0,0.55)
 
     .container-fluid
@@ -50,6 +50,30 @@
             opacity: 1
             cursor: pointer
 
+    hr
+        color: $yellow
+        background-color: $yellow
+        border: 0px none
+        height: 2px
+        clear: both
+        width: 140px
+
+    .date-review
+        text-align: center
+        font-family: "GothamProRegular"
+        margin-bottom: 0px
+        font-size: 14px
+
+    .name-people-review
+        text-align: center
+        font-family: "GothamProBold"
+        margin-bottom: 5px
+        font-size: 16px
+
+    .people-img
+        display: block
+        margin: 0 auto
+
     h3
         text-align: center
         margin-bottom: 30px
@@ -58,7 +82,7 @@
         border-radius: 45px
         float: left
         width: 345px
-        height: 500px
+        height: 550px
         margin-left: 52px
         background-color: white
 
@@ -73,24 +97,32 @@
         overflow: auto
         padding: 5px 25px 20px 25px
         margin-top: 45px
-        text-align: justify
+        p
+            text-align: justify
+            font-size: 16px
 
     .user-info
         width: 100%
-        height: 155px
-        padding: 0px 15px 30px 15px
+        height: 190px
+        padding: 0px 15px 10px 15px
 
     @media(max-width: 1199px)
-        height: 665px
+        height: 796px
 
         .reviews-substrate
-            height: 665px
+            height: 796px
 
         .review
             width: 296px
-            height: 415px
+            height: 550px
             margin-left: 36px
 
+        .name-people-review
+            font-size: 15px
+
+        .review-text
+            p
+                font-size: 15px
     @media(max-width: 991px)
         height: 725px
 
