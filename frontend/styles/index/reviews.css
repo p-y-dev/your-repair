@@ -30,6 +30,10 @@ h3 {
 .reviews {
   background: url(../../images/back_4.jpg) center no-repeat;
   height: 826px; }
+  .reviews .desktop-data {
+    display: block; }
+  .reviews .mobile-data {
+    display: none; }
   .reviews .reviews-substrate {
     position: absolute;
     width: 100%;
@@ -132,6 +136,26 @@ h3 {
     height: 725px; }
     .reviews .reviews-substrate {
       height: 725px; }
+    .reviews .desktop-data {
+      display: none; }
+    .reviews .mobile-data {
+      display: block; }
+    .reviews .user-info-mobile {
+      padding: 5px 15px; }
+      .reviews .user-info-mobile p {
+        font-family: "GothamProBold";
+        margin-bottom: 0px;
+        font-size: 16px; }
+        .reviews .user-info-mobile p span {
+          font-size: 12px;
+          font-family: "GothamProRegular"; }
+    .reviews .review-text-mobile {
+      max-height: 95px;
+      overflow: auto;
+      padding: 5px 15px; }
+      .reviews .review-text-mobile p {
+        font-family: "GothamProRegular";
+        font-size: 13px; }
     .reviews .review {
       width: 65%;
       height: 140px;

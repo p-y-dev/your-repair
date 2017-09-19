@@ -1,0 +1,76 @@
+@import url(fonts.css);
+.none {
+  display: none !important; }
+
+h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "GothamProBold";
+  margin-bottom: 15px;
+  position: relative; }
+  h3 span {
+    color: #ffd900; }
+
+.content-block {
+  padding: 40px 0px 40px 0px; }
+
+@media(max-width: 1199px) {
+  h3 {
+    margin-bottom: 25px; }
+
+  .content-block {
+    padding: 25px 0px 25px 0px; } }
+@media(max-width: 991px) {
+  h3 {
+    font-size: 24px; } }
+@media(max-width: 767px) {
+  h3 {
+    margin-bottom: 20px;
+    font-size: 18px; } }
+footer {
+  background-color: black;
+  padding: 20px 5px;
+  height: 175px; }
+  footer .footer-data {
+    height: 135px;
+    width: 33.33333%;
+    float: left; }
+  footer .all-link .menu-footer {
+    padding: 0px;
+    text-align: center; }
+    footer .all-link .menu-footer li {
+      list-style: none;
+      margin-bottom: 3px; }
+      footer .all-link .menu-footer li a {
+        color: white;
+        text-decoration: none !important;
+        transition: 0.3s;
+        font-family: "GothamProRegular"; }
+        footer .all-link .menu-footer li a:hover {
+          color: #ffd900; }
+  footer .social-networks {
+    padding-top: 42px;
+    border-right: 1px solid #ffd900; }
+    footer .social-networks .social-img {
+      width: 55px;
+      margin-left: 20px;
+      opacity: 0.85;
+      transition: 0.3s; }
+      footer .social-networks .social-img:hover {
+        opacity: 1; }
+  footer .logo-phone {
+    border-left: 1px solid #ffd900;
+    padding-top: 15px; }
+    footer .logo-phone .logo-footer {
+      float: right; }
+    footer .logo-phone .phone-footer {
+      clear: right;
+      display: block;
+      float: right;
+      margin-top: 10px;
+      text-decoration: none !important;
+      color: white;
+      font-size: 22px;
+      font-family: "GothamProBold"; }
+
+/*# sourceMappingURL=footer.css.map */
