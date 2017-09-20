@@ -24,7 +24,8 @@ footer
                 a
                     color: white
                     text-decoration: none !important
-                    transition: .3s
+                    transition: .2s
+                    font-size: 16px
                     font-family: "GothamProRegular"
 
                     &:hover
@@ -34,22 +35,27 @@ footer
         padding-top: 42px
         border-right: 1px solid $yellow
 
-        .social-img
-            width: 55px
-            margin-left: 20px
-            opacity: .85
-            transition: .3s
+        a
+            text-decoration: none !important
 
-            &:hover
-                opacity: 1
+            .social-img
+                width: 55px
+                margin-left: 20px
+                opacity: .85
+                transition: .2s
+
+                &:hover
+                    opacity: 1
 
     .logo-phone
         border-left: 1px solid $yellow
         padding-top: 15px
 
+        .link-mobile-logo
+            display: block
 
-        .logo-footer
-            float: right
+            .logo-footer
+                float: right
 
         .phone-footer
             clear: right
@@ -60,4 +66,84 @@ footer
             color: white
             font-size: 22px
             font-family: "GothamProBold"
+            transition: .2s
+
+            &:hover
+                color: $yellow
+
+    @media(max-width: 1199px)
+        .social-networks a .social-img
+            width: 45px
+            margin-left: 15px
+
+        .all-link .menu-footer li a
+            font-size: 14px
+
+        .logo-phone .phone-footer
+            font-size: 20px
+
+    @media(max-width: 991px)
+        .social-networks a .social-img
+            width: 40px
+            margin-left: 5px
+
+    @media(max-width: 767px)
+        height: 240px
+
+        .footer-data
+            width: 250px !important
+            position: absolute
+            left: 50%
+            margin-left: -125px
+            height: 75px
+
+        .social-networks
+            padding: 15px
+            border-right: none
+            border-bottom: 1px solid $yellow
+
+
+            a
+                text-decoration: none !important
+
+                .social-img
+                    margin-left: 15px
+
+                .first-social-img
+                    margin-left: 0px
+
+        .all-link
+            position: absolute
+            margin-top: 88px
+
+            .menu-footer
+                padding: 0px
+                margin-left: -7px
+
+                li
+                    list-style: none
+                    margin-bottom: 0px
+                    float: left
+                    margin-left: 17px
+                    margin-bottom: 8px
+
+                    a
+                        font-size: 14px
+
+        .logo-phone
+            border-left: none
+            border-top: 1px solid $yellow
+            margin-top: 160px
+            height: 60px
+
+            .link-mobile-logo
+                display: none
+
+            .phone-footer
+                clear: right
+                float: none
+                text-align: center
+                margin-top: 0px
+                color: $yellow
+                font-size: 16px
 
