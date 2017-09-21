@@ -11,24 +11,34 @@
 
                         <div class="row row-img-works">
                             <div class="image-div first-image-div">
-                                <img class="img-thumbnail thumbnail" src={% static "images/test1.png"%}>
+                                <a data-fancybox="gallery" href={% static "images/test1.png"%}>
+                                    <img class="img-thumbnail thumbnail" src={% static "images/test1.png"%}>
+                                </a>
                             </div>
 
                             <div class="image-div first-image-div">
-                                <img class="img-thumbnail thumbnail" src={% static "images/test2.png"%}>
+                                <a data-fancybox="gallery" href={% static "images/test2.png"%}>
+                                    <img class="img-thumbnail thumbnail" src={% static "images/test2.png"%}>
+                                </a>
                             </div>
 
                             <div class="image-div">
-                                <img class="img-thumbnail thumbnail" src={% static "images/test3.png"%}>
+                                <a data-fancybox="gallery" href={% static "images/test3.png"%}>
+                                    <img class="img-thumbnail thumbnail" src={% static "images/test3.png"%}>
+                                </a>
                             </div>
 
                             <div class="image-div">
-                                <img class="img-thumbnail thumbnail" src={% static "images/test4.png"%}>
+                                <a data-fancybox="gallery" href={% static "images/test4.png"%}>
+                                    <img class="img-thumbnail thumbnail" src={% static "images/test4.png"%}>
+                                </a>
                             </div>
                         </div>
 
                         <div class="row row-btn">
-                            <button>Посмотреть все работы</button>
+                            <button data-toggle="modal" data-target="#modalGallery">
+                                Посмотреть все работы
+                            </button>
                         </div>
                     </div>
                 </div>

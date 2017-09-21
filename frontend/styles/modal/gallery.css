@@ -1,0 +1,16 @@
+.gallery-items {
+  margin-top: -20px; }
+
+.gallery-img {
+  width: 25%;
+  float: left; }
+
+.modal-body {
+  height: 70vh;
+  overflow: auto; }
+
+@media(max-width: 1199px) {
+  .gallery-img {
+    width: 33.33333%; } }
+
+/*# sourceMappingURL=gallery.css.map */

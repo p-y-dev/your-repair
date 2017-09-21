@@ -44,25 +44,30 @@ footer {
       footer .all-link .menu-footer li a {
         color: white;
         text-decoration: none !important;
-        transition: 0.3s;
+        transition: 0.2s;
+        font-size: 16px;
         font-family: "GothamProRegular"; }
         footer .all-link .menu-footer li a:hover {
           color: #ffd900; }
   footer .social-networks {
     padding-top: 42px;
     border-right: 1px solid #ffd900; }
-    footer .social-networks .social-img {
-      width: 55px;
-      margin-left: 20px;
-      opacity: 0.85;
-      transition: 0.3s; }
-      footer .social-networks .social-img:hover {
-        opacity: 1; }
+    footer .social-networks a {
+      text-decoration: none !important; }
+      footer .social-networks a .social-img {
+        width: 55px;
+        margin-left: 20px;
+        opacity: 0.85;
+        transition: 0.2s; }
+        footer .social-networks a .social-img:hover {
+          opacity: 1; }
   footer .logo-phone {
     border-left: 1px solid #ffd900;
     padding-top: 15px; }
-    footer .logo-phone .logo-footer {
-      float: right; }
+    footer .logo-phone .link-mobile-logo {
+      display: block; }
+      footer .logo-phone .link-mobile-logo .logo-footer {
+        float: right; }
     footer .logo-phone .phone-footer {
       clear: right;
       display: block;
@@ -71,6 +76,68 @@ footer {
       text-decoration: none !important;
       color: white;
       font-size: 22px;
-      font-family: "GothamProBold"; }
+      font-family: "GothamProBold";
+      transition: 0.2s; }
+      footer .logo-phone .phone-footer:hover {
+        color: #ffd900; }
+@media(max-width: 1199px) {
+  footer .social-networks a .social-img {
+    width: 45px;
+    margin-left: 15px; }
+  footer .all-link .menu-footer li a {
+    font-size: 14px; }
+  footer .logo-phone .phone-footer {
+    font-size: 20px; } }
+@media(max-width: 991px) {
+  footer .social-networks a .social-img {
+    width: 40px;
+    margin-left: 5px; } }
+@media(max-width: 767px) {
+  footer {
+    height: 240px; }
+    footer .footer-data {
+      width: 250px !important;
+      position: absolute;
+      left: 50%;
+      margin-left: -125px;
+      height: 75px; }
+    footer .social-networks {
+      padding: 15px;
+      border-right: none;
+      border-bottom: 1px solid #ffd900; }
+      footer .social-networks a {
+        text-decoration: none !important; }
+        footer .social-networks a .social-img {
+          margin-left: 15px; }
+        footer .social-networks a .first-social-img {
+          margin-left: 0px; }
+    footer .all-link {
+      position: absolute;
+      margin-top: 88px; }
+      footer .all-link .menu-footer {
+        padding: 0px;
+        margin-left: -7px; }
+        footer .all-link .menu-footer li {
+          list-style: none;
+          margin-bottom: 0px;
+          float: left;
+          margin-left: 17px;
+          margin-bottom: 8px; }
+          footer .all-link .menu-footer li a {
+            font-size: 14px; }
+    footer .logo-phone {
+      border-left: none;
+      border-top: 1px solid #ffd900;
+      margin-top: 160px;
+      height: 60px; }
+      footer .logo-phone .link-mobile-logo {
+        display: none; }
+      footer .logo-phone .phone-footer {
+        clear: right;
+        float: none;
+        text-align: center;
+        margin-top: 0px;
+        color: #ffd900;
+        font-size: 16px; } }
 
 /*# sourceMappingURL=footer.css.map */
