@@ -40,8 +40,10 @@ INSTALLED_APPS = [
 
     'compressor',
     'easy_thumbnails',
+    'singlemodeladmin',
 
     'vash_remont.accounts',
+    'vash_remont.gallery'
 ]
 
 MIDDLEWARE = [
