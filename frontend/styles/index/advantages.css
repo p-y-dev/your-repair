@@ -23,9 +23,16 @@ h3 {
 .green-text {
   color: green; }
 
+.anchor {
+  position: absolute;
+  margin-top: -75px; }
+
 @media(max-width: 1199px) {
   h3 {
     margin-bottom: 25px; }
+
+  .anchor {
+    margin-top: -62px; }
 
   .content-block {
     padding: 25px 0px 25px 0px; } }
