@@ -1,0 +1,22 @@
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% for gallery in galleries %}
+    <div class=" row row-title-gallery
+    {% if forloop.counter0 == 0 %}
+         row-title-gallery-first
+    {% endif %}
+    ">
+        <p class="name-gallery">{{ gallery.name }}</p>
+    </div>
+    <div class="row row-gallery">
+        {% for image_obj in gallery.image_set.all %}
+            <div class="gallery-img">
+                <a data-fancybox="gallery-{{ gallery.id }}" data-options='{"caption" : "{{ gallery.name }}"}' href="{{ image_obj.image.url }}">
+                    {% thumbnail image_obj.image 186x106 upscale as image %}
+                    <img src="{{ image.url }}" width="{{ image.width }}" height="{{ image.height }}" class="img-thumbnail gallery-img-thumbnail">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}

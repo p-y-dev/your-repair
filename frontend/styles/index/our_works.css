@@ -42,7 +42,13 @@ h3 {
   border: none;
   display: block;
   margin: 0 auto;
-  width: 563px; }
+  width: 563px;
+  height: 320px; }
+.our-works .works-is-not {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: "GothamProRegular";
+  font-size: 25px; }
 .our-works button {
   color: black;
   display: block;
@@ -68,9 +74,17 @@ h3 {
   .our-works .first-image-div {
     margin-bottom: 0px; } }
 @media(max-width: 991px) {
+  .our-works .thumbnail {
+    height: 225px; }
+  .our-works .works-is-not {
+    font-size: 20px; }
   .our-works button {
     font-size: 16px; } }
 @media(max-width: 767px) {
+  .our-works .thumbnail {
+    height: 120px; }
+  .our-works .works-is-not {
+    font-size: 16px; }
   .our-works button {
     font-size: 14px;
     padding: 10px 15px; } }

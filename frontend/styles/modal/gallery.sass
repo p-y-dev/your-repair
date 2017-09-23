@@ -1,6 +1,15 @@
+@import "../base.sass"
+@import "../fonts.css"
 
 .gallery-items
     margin-top: -20px
+
+    .fa-cog
+        font-size: 80px
+        display: block
+        margin: 0 auto
+        margin-top: 26vh
+        color: black
 
 .gallery-img
     width: 25%
@@ -14,6 +23,21 @@
     width: 100%
     height: 135px
 
+.row-title-gallery
+    margin-top: 25px
+    padding: 0px 15px
+
+    .name-gallery
+        font-family: "GothamProRegular"
+        margin-bottom: 0
+        font-size: 18px
+
+.row-title-gallery-first
+    margin-top: 5px
+
+.row-gallery
+    padding: 0px 12px
+
 @media(max-width: 1199px)
     .gallery-img
         width: 33.33333%
@@ -25,3 +49,9 @@
 @media(max-width: 767px)
     .gallery-img-thumbnail
         height: 80px
+
+    .gallery-items .fa-cog
+        font-size: 40px
+
+    .row-title-gallery .name-gallery
+        font-size: 16px

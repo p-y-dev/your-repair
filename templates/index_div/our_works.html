@@ -10,26 +10,33 @@
                     <div class="our-works-content">
                         <h3>Наши <span>работы</span></h3>
 
-                        <div class="row row-img-works">
-                            {% for image_obj in main_images_gallery %}
-                                <div class="image-div
-                                    {% if forloop.counter0 == 0 or forloop.counter0 == 1 %}
-                                        first-image-div
-                                    {% endif %}
-                                ">
-                                    <a data-fancybox="gallery" href="{{ image_obj.image.url }}">
-                                        {% thumbnail image_obj.image 563x320 upscale as image %}
-                                        <img src="{{ image.url }}" width="{{ image.width }}" height="{{ image.height }}" class="img-thumbnail thumbnail">
-                                    </a>
-                                </div>
-                            {% endfor %}
-                        </div>
+                        {% if main_images|length >= 4 %}
+                            <div class="row row-img-works">
+                                {% for image_obj in main_images %}
+                                    <div class="image-div
+                                        {% if forloop.counter0 == 0 or forloop.counter0 == 1 %}
+                                            first-image-div
+                                        {% endif %}
+                                    ">
+                                        <a data-fancybox="main-img" data-options='{"caption" : "{{ image_obj.gallery.name }}"}' href="{{ image_obj.image.url }}">
+                                            {% thumbnail image_obj.image 563x320 upscale as image %}
+                                            <img src="{{ image.url }}" width="{{ image.width }}" height="{{ image.height }}" class="img-thumbnail thumbnail">
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
 
-                        <div class="row row-btn">
-                            <button data-toggle="modal" data-target="#modalGallery">
-                                Посмотреть все работы
-                            </button>
-                        </div>
+                            {% if galleries|length > 0 %}
+                                <div class="row row-btn">
+                                    <button id="open-gallery" data-toggle="modal" data-target="#modalGallery">
+                                        Посмотреть все работы
+                                    </button>
+                                </div>
+                            {% endif %}
+
+                        {% else %}
+                            <p class="works-is-not">В ближайшее время мы добавим примеры работ</p>
+                        {% endif %}
                     </div>
                 </div>
             </div>

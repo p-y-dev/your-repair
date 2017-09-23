@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     'compressor',
     'easy_thumbnails',
-    'singlemodeladmin',
+    'adminsortable2',
 
     'vash_remont.accounts',
     'vash_remont.gallery'
@@ -55,6 +55,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+FILES_WIDGET_TEMP_DIR = 'temp/files_widget/'
 
 ROOT_URLCONF = 'vash_remont.urls'
 

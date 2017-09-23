@@ -12,14 +12,7 @@
         </div>
         <div class="modal-body modal-body-gallery">
             <div class="gallery-items">
-                {% for image_obj in all_images_gallery %}
-                    <div class="gallery-img">
-                        <a data-fancybox="gallery" href="{{ image_obj.image.url }}">
-                            {% thumbnail image_obj.image 186x106 upscale as image %}
-                            <img src="{{ image.url }}" width="{{ image.width }}" height="{{ image.height }}" class="img-thumbnail gallery-img-thumbnail">
-                        </a>
-                    </div>
-                {% endfor %}
+                <i class="fa fa-cog fa-spin fa-fw"></i>
             </div>
         </div>
     </div>
