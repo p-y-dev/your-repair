@@ -18,6 +18,7 @@
             <link href="{% static 'styles/footer.sass' %}" rel="stylesheet" type="text/x-sass" />
             <link href="{% static 'styles/modal/main.sass' %}" rel="stylesheet" type="text/x-sass" />
             <link href="{% static 'styles/modal/gallery.sass' %}" rel="stylesheet" type="text/x-sass" />
+            <link href="{% static 'styles/modal/application.sass' %}" rel="stylesheet" type="text/x-sass" />
             {% block styles %}
             {% endblock %}
         {% endcompress %}
@@ -36,7 +37,8 @@
         {% block content %}
         {% endblock %}
 
-        {% include "modal/gallery.html" %}
+        {% include "modal/gallery/gallery_modal.html" %}
+        {% include "modal/application.html" %}
 
 
         {% if page_history is not True %}
@@ -47,9 +49,11 @@
             <script src="{% static 'packages/jquery-3.2.1.min.js' %}"></script>
             <script src="{% static 'packages/bootstrap4/js/bootstrap.min.js' %}"></script>
             <script src="{% static 'packages/fancybox/jquery.fancybox.min.js' %}"></script>
+            <script src="{% static 'packages/anchor.min.js' %}"></script>
             <script src={% static 'js/main.js' %}></script>
             <script src={% static 'js/menu.js' %}></script>
             <script src={% static 'js/open_gallery.js' %}></script>
+            <script src={% static 'js/application.js' %}></script>
             {% block js %}
             {% endblock %}
         {% endcompress %}

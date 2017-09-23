@@ -18,10 +18,20 @@ def home_page(request):
 def get_galleries(request):
 
     gallery_html_data = render_to_string(
-        "modal/gallery_data.html",
+        "modal/gallery/gallery_data.html",
         {"galleries": Gallery.objects.all()}
     )
 
     return JsonResponse({
         "gallery_html_data": gallery_html_data
+    })
+
+
+def send_application(request):
+    initials = request.GET['initials']
+    phone = request.GET['phone']
+
+    return JsonResponse({
+        "initials": initials,
+        "phone": phone,
     })
