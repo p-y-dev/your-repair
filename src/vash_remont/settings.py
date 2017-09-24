@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'vash.remontkv@yandex.ru'
+EMAIL_HOST_PASSWORD = '73bSwFKmaHcm'
+EMAIL_USE_SSL = True
 
 # Application definition
 

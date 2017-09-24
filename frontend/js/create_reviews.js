@@ -28,9 +28,15 @@
             $.get({
                 url: "/reviews/create?" + get_data,
                 success: function(data) {
-                    $(status_data_class).html("Спасибо за Ваш отзыв, он будет опубликован после проверки модератором!");
-                    $(initials_id).val("");
-                    $(review_id).val("");
+                    if(data["success"]) {
+                        $(status_data_class).html("Спасибо за Ваш отзыв, он будет опубликован после проверки модератором!");
+                        $(initials_id).val("");
+                        $(review_id).val("");
+                    } else {
+                        $(status_data_class).removeClass("green-text");
+                        $(status_data_class).addClass("red-text");
+                        $(status_data_class).html("Ошибка при отправке");
+                    }
                 },
 
                 error: function () {

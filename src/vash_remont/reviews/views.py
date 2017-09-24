@@ -1,6 +1,7 @@
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.core.mail import send_mail
 from .models import Review
+from django.conf import settings
 
 
 def create_reviews(request):
@@ -12,7 +13,18 @@ def create_reviews(request):
         review_text=review
     )
 
-    return JsonResponse({
-        "initials": initials,
-        "review": review,
-    })
+    status_send = send_mail(
+        'Отзыв на сайт', 'Инициалы: ' + initials + "\n\nОтзыв: " + review,
+        settings.EMAIL_HOST_USER,
+        [settings.EMAIL_HOST_USER]
+    )
+
+    if status_send == 1:
+        return JsonResponse({
+            "success": True,
+        })
+    else:
+        return JsonResponse({
+            "success": False,
+        })
+

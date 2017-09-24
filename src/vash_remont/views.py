@@ -1,3 +1,4 @@
+from django.core.mail import send_mail
 from django.http import JsonResponse
 from django.shortcuts import render
 
@@ -5,6 +6,7 @@ from vash_remont.gallery.models import Gallery, Image
 from vash_remont.reviews.models import Review, APPROVED
 
 from vash_remont.settings_site.models import SettingsSite
+from django.conf import settings
 
 
 def home_page(request):
@@ -42,7 +44,17 @@ def send_application(request):
     initials = request.GET['initials']
     phone = request.GET['phone']
 
-    return JsonResponse({
-        "initials": initials,
-        "phone": phone,
-    })
+    status_send = send_mail(
+        'Заявка на консультацию', 'Инициалы: ' + initials + "\nНомер телефона: " + phone,
+        settings.EMAIL_HOST_USER,
+        [settings.EMAIL_HOST_USER]
+    )
+
+    if status_send == 1:
+        return JsonResponse({
+            "success": True,
+        })
+    else:
+        return JsonResponse({
+            "success": False,
+        })

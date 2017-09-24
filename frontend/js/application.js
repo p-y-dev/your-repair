@@ -35,9 +35,15 @@
             $.get({
                 url: "/send_application?" + get_data,
                 success: function (data) {
-                    $(status_data_class).html("Заявка успешно отправлена, мы вам перезвоним");
-                    $(initials_id).val("");
-                    $(phone_id).val("");
+                    if(data["success"]) {
+                        $(status_data_class).html("Заявка успешно отправлена, мы вам перезвоним");
+                        $(initials_id).val("");
+                        $(phone_id).val("");
+                    } else {
+                        $(status_data_class).removeClass("green-text");
+                        $(status_data_class).addClass("red-text");
+                        $(status_data_class).html("Ошибка при отправке");
+                    }
                 },
 
                 error: function () {
