@@ -7,3 +7,4 @@ easy-thumbnails
 Unidecode
 requests
 django-admin-sortable2
+singlemodeladmin

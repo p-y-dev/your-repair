@@ -39,12 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'compressor',
+    'singlemodeladmin',
     'easy_thumbnails',
     'adminsortable2',
 
     'vash_remont.accounts',
     'vash_remont.gallery',
-    'vash_remont.reviews'
+    'vash_remont.reviews',
+    'vash_remont.settings_site'
 ]
 
 MIDDLEWARE = [

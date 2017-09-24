@@ -4,17 +4,17 @@
     <div class="container-fluid">
         <div class="container">
             <div class="social-networks footer-data">
-                <a href="#" target="_blank">
+                <a href="{{ settings_site.vk_link }}" target="_blank">
                     <img class="social-img first-social-img" src={% static "images/vk.png" %}>
                 </a>
-                <a href="#" target="_blank">
+                <a href="{{ settings_site.youtube_link }}" target="_blank">
                     <img class="social-img" src={% static "images/yutube.png" %}>
                 </a>
-                <a href="#" target="_blank">
-                    <img class="social-img" src={% static "images/vk.png" %}>
+                <a href="{{ settings_site.twitter_link }}" target="_blank">
+                    <img class="social-img" src={% static "images/tw.png" %}>
                 </a>
-                <a href="#" target="_blank">
-                    <img class="social-img" src={% static "images/yutube.png" %}>
+                <a href="{{ settings_site.google_plus_link }}" target="_blank">
+                    <img class="social-img" src={% static "images/gplus.png" %}>
                 </a>
             </div>
             <div class="all-link footer-data">
@@ -30,7 +30,8 @@
                 <a class="link-mobile-logo" href="/">
                     <img class="logo-footer" src={% static "images/logo.png" %}>
                 </a>
-                <a class="phone-footer" href="tel:8-913-744-35-07">8-913-744-35-07</a>
+                <a class="phone-footer" href="tel:{{ settings_site.number_phone }}">{{ settings_site.number_phone }}</a>
+                <a class="email-footer" href="mailto:{{ settings_site.email }}">{{ settings_site.email }}</a>
             </div>
         </div>
     </div>

@@ -79,12 +79,12 @@ footer {
           opacity: 1; }
   footer .logo-phone {
     border-left: 1px solid #ffd900;
-    padding-top: 15px; }
+    padding-top: 10px; }
     footer .logo-phone .link-mobile-logo {
       display: block; }
       footer .logo-phone .link-mobile-logo .logo-footer {
         float: right; }
-    footer .logo-phone .phone-footer {
+    footer .logo-phone .phone-footer, footer .logo-phone .email-footer {
       clear: right;
       display: block;
       float: right;
@@ -94,8 +94,11 @@ footer {
       font-size: 22px;
       font-family: "GothamProBold";
       transition: 0.2s; }
-      footer .logo-phone .phone-footer:hover {
+      footer .logo-phone .phone-footer:hover, footer .logo-phone .email-footer:hover {
         color: #ffd900; }
+    footer .logo-phone .email-footer {
+      margin-top: 0px;
+      font-size: 16px; }
 @media(max-width: 1199px) {
   footer .social-networks a .social-img {
     width: 45px;
@@ -105,12 +108,14 @@ footer {
   footer .logo-phone .phone-footer {
     font-size: 20px; } }
 @media(max-width: 991px) {
+  footer .logo-phone .email-footer {
+    font-size: 14px; }
   footer .social-networks a .social-img {
     width: 40px;
     margin-left: 5px; } }
 @media(max-width: 767px) {
   footer {
-    height: 240px; }
+    height: 260px; }
     footer .footer-data {
       width: 250px !important;
       position: absolute;
@@ -148,12 +153,12 @@ footer {
       height: 60px; }
       footer .logo-phone .link-mobile-logo {
         display: none; }
-      footer .logo-phone .phone-footer {
+      footer .logo-phone .phone-footer, footer .logo-phone .email-footer {
         clear: right;
         float: none;
         text-align: center;
-        margin-top: 0px;
+        margin-top: 5px;
         color: #ffd900;
-        font-size: 16px; } }
+        font-size: 14px; } }
 
 /*# sourceMappingURL=footer.css.map */

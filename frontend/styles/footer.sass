@@ -49,7 +49,7 @@ footer
 
     .logo-phone
         border-left: 1px solid $yellow
-        padding-top: 15px
+        padding-top: 10px
 
         .link-mobile-logo
             display: block
@@ -57,7 +57,7 @@ footer
             .logo-footer
                 float: right
 
-        .phone-footer
+        .phone-footer, .email-footer
             clear: right
             display: block
             float: right
@@ -71,6 +71,10 @@ footer
             &:hover
                 color: $yellow
 
+        .email-footer
+            margin-top: 0px
+            font-size: 16px
+
     @media(max-width: 1199px)
         .social-networks a .social-img
             width: 45px
@@ -83,12 +87,16 @@ footer
             font-size: 20px
 
     @media(max-width: 991px)
+        .logo-phone
+            .email-footer
+                font-size: 14px
+
         .social-networks a .social-img
             width: 40px
             margin-left: 5px
 
     @media(max-width: 767px)
-        height: 240px
+        height: 260px
 
         .footer-data
             width: 250px !important
@@ -139,11 +147,10 @@ footer
             .link-mobile-logo
                 display: none
 
-            .phone-footer
+            .phone-footer, .email-footer
                 clear: right
                 float: none
                 text-align: center
-                margin-top: 0px
+                margin-top: 5px
                 color: $yellow
-                font-size: 16px
-
+                font-size: 14px

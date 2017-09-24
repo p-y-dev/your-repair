@@ -161,12 +161,12 @@ h3 {
       .reviews .user-info-mobile p {
         font-family: "GothamProBold";
         margin-bottom: 0px;
-        font-size: 16px; }
+        font-size: 14px; }
         .reviews .user-info-mobile p span {
           font-size: 12px;
           font-family: "GothamProRegular"; }
     .reviews .review-text-mobile {
-      max-height: 95px;
+      max-height: 100px;
       overflow: auto;
       padding: 5px 15px; }
       .reviews .review-text-mobile p {
@@ -194,6 +194,8 @@ h3 {
       height: 675px; }
     .reviews h3 {
       margin-bottom: 17px; }
+    .reviews .review-text-mobile {
+      max-height: 80px; }
     .reviews .review {
       margin-top: 17px !important;
       width: 100%; }
