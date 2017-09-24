@@ -43,21 +43,38 @@ h3 {
   h3 {
     margin-bottom: 20px;
     font-size: 18px; } }
-.modal-body-application {
-  height: 300px; }
+.modal-body-write-reviews {
+  height: 460px; }
+
+#reviews-form button {
+  margin-top: 65px; }
+
+.row-review {
+  padding: 15px; }
+  .row-review .title-review {
+    margin-bottom: 5px;
+    font-family: "GothamProRegular";
+    font-size: 14px; }
+    .row-review .title-review span {
+      font-family: "GothamProBold"; }
+  .row-review .content-review {
+    margin-bottom: 0px;
+    text-align: justify;
+    font-size: 14px; }
 
 @media(max-width: 767px) {
-  .modal-body-application {
-    height: 250px;
-    padding-top: 0px; }
+  .modal-body-write-reviews {
+    height: 420px; }
 
-  #application-form .title-input {
-    font-size: 16px; }
+  #reviews-form .title-input {
+    font-size: 14px; }
+  #reviews-form textarea {
+    height: 160px;
+    max-height: 160px; }
+  #reviews-form button {
+    margin-top: 80px; }
 
-  .application-data {
-    position: relative;
-    width: 100%;
-    left: 0;
-    margin-left: 0px; } }
+  .row-review .content-review {
+    font-size: 12px; } }
 
-/*# sourceMappingURL=application.css.map */
+/*# sourceMappingURL=reviews.css.map */

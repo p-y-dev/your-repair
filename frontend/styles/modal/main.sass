@@ -39,3 +39,62 @@
 
     &:hover
         opacity: 1
+
+.form-data
+    position: absolute
+    width: 400px
+    left: 50%
+    margin-left: -200px
+
+form
+    .title-input
+        font-family: "GothamProRegular"
+        margin-bottom: 5px
+        font-size: 20px
+
+    input, textarea
+        display: block
+        margin-bottom: 20px
+        width: 100%
+        border: 2px solid black
+        padding: 5px 15px
+        outline: none !important
+
+    textarea
+        height: 200px
+        max-height: 200px
+
+    button
+        display: block
+        margin: 0 auto
+        margin-top: 40px
+        color: white
+        background-color: black
+        border: none
+        outline: none !important
+        border-radius: 15px
+        font-family: "GothamProBold"
+        text-transform: uppercase
+        font-size: 14px
+        padding: 7px 15px
+        position: relative
+        transition: .3s
+        opacity: .85
+
+        &:hover
+            cursor: pointer
+            opacity: 1
+
+    .status-data
+        text-align: center
+        margin-bottom: 0px
+        position: absolute
+        margin-top: -10px
+        font-size: 14px
+
+@media(max-width: 767px)
+    .form-data
+        position: relative
+        width: 100%
+        left: 0
+        margin-left: 0px

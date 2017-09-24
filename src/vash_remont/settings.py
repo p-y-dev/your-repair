@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'adminsortable2',
 
     'vash_remont.accounts',
-    'vash_remont.gallery'
+    'vash_remont.gallery',
+    'vash_remont.reviews'
 ]
 
 MIDDLEWARE = [

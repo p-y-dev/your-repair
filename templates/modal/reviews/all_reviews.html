@@ -1,0 +1,23 @@
+<div class="modal fade" data-backdrop="static" id="modalAllReviews" tabindex="-1" role="dialog" aria-labelledby="modalAllReviewsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Все <span>отзывы</span></h3>
+            <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body modal-body-all-reviews">
+            {% for review in reviews %}
+                {% if forloop.counter0 != 0 %}
+                    <hr>
+                {% endif %}
+                <div class="row row-review">
+                    <p class="title-review"><span>{{ review.name_user }}</span> - {{ review.datetime|date:"d.m.Y H:i" }}</p>
+                    <p class="content-review">{{ review.review_text }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,8 @@
 from django.http import JsonResponse
-from django.template.loader import render_to_string
 from django.shortcuts import render
+
 from vash_remont.gallery.models import Gallery, Image
+from vash_remont.reviews.models import Review, APPROVED
 
 
 def home_page(request):
@@ -9,21 +10,16 @@ def home_page(request):
     images = Image.objects.order_by('?').all()[:4]
     galleries = Gallery.objects.all()
 
+    reviews = Review.objects.filter(state=APPROVED).all()
+    main_reviews = reviews.order_by('?')[:3]
+
     return render(request, "index.html", {
         "main_images": images,
-        "galleries": galleries
-    })
+        "galleries": galleries,
 
+        "main_reviews": main_reviews,
+        "reviews": reviews,
 
-def get_galleries(request):
-
-    gallery_html_data = render_to_string(
-        "modal/gallery/gallery_data.html",
-        {"galleries": Gallery.objects.all()}
-    )
-
-    return JsonResponse({
-        "gallery_html_data": gallery_html_data
     })
 
 

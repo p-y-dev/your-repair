@@ -18,13 +18,16 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 
-from .views import home_page, get_galleries, send_application
+from .views import home_page, send_application
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home_page, name="home"),
-    url(r'^get_galleries$', get_galleries, name="get_galleries"),
     url(r'^send_application$', send_application, name="send_application"),
+
+    url(r'^gallery/', include('vash_remont.gallery.urls', namespace="gallery")),
+
+    url(r'^reviews/', include('vash_remont.reviews.urls', namespace="reviews")),
 ]
 
 if settings.DEBUG:

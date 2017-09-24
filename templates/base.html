@@ -19,6 +19,7 @@
             <link href="{% static 'styles/modal/main.sass' %}" rel="stylesheet" type="text/x-sass" />
             <link href="{% static 'styles/modal/gallery.sass' %}" rel="stylesheet" type="text/x-sass" />
             <link href="{% static 'styles/modal/application.sass' %}" rel="stylesheet" type="text/x-sass" />
+            <link href="{% static 'styles/modal/reviews.sass' %}" rel="stylesheet" type="text/x-sass" />
             {% block styles %}
             {% endblock %}
         {% endcompress %}
@@ -39,6 +40,8 @@
 
         {% include "modal/gallery/gallery_modal.html" %}
         {% include "modal/application.html" %}
+        {% include "modal/reviews/write_reviews.html" %}
+        {% include "modal/reviews/all_reviews.html" %}
 
 
         {% if page_history is not True %}
@@ -54,6 +57,7 @@
             <script src={% static 'js/menu.js' %}></script>
             <script src={% static 'js/open_gallery.js' %}></script>
             <script src={% static 'js/application.js' %}></script>
+            <script src={% static 'js/create_reviews.js' %}></script>
             {% block js %}
             {% endblock %}
         {% endcompress %}

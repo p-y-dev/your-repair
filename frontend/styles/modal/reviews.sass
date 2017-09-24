@@ -1,0 +1,41 @@
+@import "../base.sass"
+@import "../fonts.css"
+
+.modal-body-write-reviews
+    height: 460px
+
+#reviews-form button
+    margin-top: 65px
+
+.row-review
+    padding: 15px
+
+    .title-review
+        margin-bottom: 5px
+        font-family: "GothamProRegular"
+        font-size: 14px
+
+        span
+            font-family: "GothamProBold"
+
+    .content-review
+        margin-bottom: 0px
+        text-align: justify
+        font-size: 14px
+
+@media(max-width: 767px)
+    .modal-body-write-reviews
+        height: 420px
+
+    #reviews-form
+        .title-input
+            font-size: 14px
+        textarea
+            height: 160px
+            max-height: 160px
+
+        button
+            margin-top: 80px
+
+    .row-review .content-review
+        font-size: 12px
