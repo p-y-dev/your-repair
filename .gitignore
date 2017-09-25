@@ -4,3 +4,4 @@ __pycache__
 .idea
 var/
 src/ansible/*.retry
+src/vash_remont/settings_production.py
