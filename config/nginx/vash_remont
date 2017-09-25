@@ -1,0 +1,28 @@
+server {
+        listen 80;
+        server_name 40.68.100.89;
+
+        root /home/py/vash_remont/var/;
+
+        client_max_body_size 32m;
+
+        location / {
+                include /etc/nginx/uwsgi_params;
+                uwsgi_pass unix:/run/uwsgi/app/vash_remont/socket;
+
+                uwsgi_param Host $host;
+                uwsgi_param X-Real-IP $remote_addr;
+                uwsgi_param X-Forwarded-For $proxy_add_x_forwarded_for;
+                uwsgi_param X-Forwarded-Proto $http_x_forwarded_proto;
+        }
+
+        location /static {
+                expires 365d;
+                alias /home/py/vash_remont/var/static/;
+        }
+
+        location /media {
+                expires 365d;
+                alias /home/py/vash_remont/var/media/;
+        }
+}
