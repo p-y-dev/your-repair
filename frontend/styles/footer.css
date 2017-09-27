@@ -78,8 +78,7 @@ footer {
         footer .social-networks a .social-img:hover {
           opacity: 1; }
   footer .logo-phone {
-    border-left: 1px solid #ffd900;
-    padding-top: 10px; }
+    border-left: 1px solid #ffd900; }
     footer .logo-phone .link-mobile-logo {
       display: block; }
       footer .logo-phone .link-mobile-logo .logo-footer {
@@ -91,7 +90,7 @@ footer {
       margin-top: 10px;
       text-decoration: none !important;
       color: white;
-      font-size: 22px;
+      font-size: 18px;
       font-family: "GothamProBold";
       transition: 0.2s; }
       footer .logo-phone .phone-footer:hover, footer .logo-phone .email-footer:hover {
@@ -99,6 +98,8 @@ footer {
     footer .logo-phone .email-footer {
       margin-top: 0px;
       font-size: 16px; }
+    footer .logo-phone .phone-footer-two {
+      margin-top: 0px; }
 @media(max-width: 1199px) {
   footer .social-networks a .social-img {
     width: 45px;
@@ -106,7 +107,7 @@ footer {
   footer .all-link .menu-footer li a {
     font-size: 14px; }
   footer .logo-phone .phone-footer {
-    font-size: 20px; } }
+    font-size: 17px; } }
 @media(max-width: 991px) {
   footer .logo-phone .email-footer {
     font-size: 14px; }
@@ -115,7 +116,7 @@ footer {
     margin-left: 5px; } }
 @media(max-width: 767px) {
   footer {
-    height: 260px; }
+    height: 280px; }
     footer .footer-data {
       width: 250px !important;
       position: absolute;

@@ -64,7 +64,13 @@ h3 {
   .reviews .view-review {
     font-family: "GothamProRegular";
     color: white;
-    font-size: 22px; }
+    font-size: 22px;
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto; }
     .reviews .view-review:hover {
       cursor: pointer; }
   .reviews .write-review {

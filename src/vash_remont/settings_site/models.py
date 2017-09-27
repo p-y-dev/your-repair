@@ -10,9 +10,16 @@ class SettingsSite(models.Model):
         verbose_name="Электронная почта"
     )
 
-    number_phone = models.CharField(
-        verbose_name="Номер телефона",
-        max_length=20
+    number_phone_one = models.CharField(
+        verbose_name="Номер телефона 1",
+        max_length=60
+    )
+
+    number_phone_two = models.CharField(
+        verbose_name="Номер телефона 2",
+        max_length=60,
+        blank=True,
+        null=True,
     )
 
     youtube_link = models.CharField(

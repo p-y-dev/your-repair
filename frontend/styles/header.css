@@ -64,7 +64,7 @@ header {
     margin: 15px 0px 0px 0px; }
     header .menu-desktop li {
       float: left;
-      margin-left: 40px; }
+      margin-left: 45px; }
       header .menu-desktop li a {
         text-decoration: none !important;
         padding: 6px 15px 6px 15px;
@@ -84,10 +84,13 @@ header {
         background-color: #ffd900; }
         header .menu-desktop .item:hover a {
           color: black; }
-    header .menu-desktop .phone a {
-      padding: 0px;
-      font-family: "GothamProBlack";
-      color: #ffd900; }
+  header .header-desktop-phone {
+    float: right;
+    display: block;
+    font-family: "GothamProBlack";
+    color: #ffd900;
+    font-size: 19px;
+    text-decoration: none !important; }
 @media(max-width: 1199px) {
   header {
     height: 62px; }
@@ -97,9 +100,11 @@ header {
     header .menu-desktop {
       margin: 10px 0px 0px 0px; }
       header .menu-desktop li {
-        margin-left: 25px; }
+        margin-left: 28px; }
         header .menu-desktop li a {
-          font-size: 17px; } }
+          font-size: 17px; }
+    header .header-desktop-phone {
+      font-size: 15px; } }
 @media(max-width: 991px) {
   header {
     height: 62px; }
@@ -109,15 +114,19 @@ header {
     header .menu-desktop {
       margin: 10px 0px 0px 0px; }
       header .menu-desktop li {
-        margin-left: 14px; }
+        margin-left: 12px; }
         header .menu-desktop li a {
           padding: 0px 8px 0px 8px;
-          font-size: 14px; } }
+          font-size: 14px; }
+    header .header-desktop-phone {
+      font-size: 14px; } }
 @media(max-width: 767px) {
   header {
     padding-right: 0px;
     padding-left: 0px;
     background-color: black; }
+    header .header-desktop-phone {
+      display: none; }
     header .menu-desktop {
       display: none; }
     header .fa-list, header .fa-times {

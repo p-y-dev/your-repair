@@ -26,7 +26,7 @@ header
 
         li
             float: left
-            margin-left: 40px
+            margin-left: 45px
 
             a
                 text-decoration: none !important
@@ -53,12 +53,14 @@ header
 
                 a
                     color: black
-        .phone
-            a
-                padding: 0px
-                font-family: "GothamProBlack"
-                color: $yellow
 
+    .header-desktop-phone
+        float: right
+        display: block
+        font-family: "GothamProBlack"
+        color: $yellow
+        font-size: 19px
+        text-decoration: none !important
 
     @media(max-width: 1199px)
         height: 62px
@@ -71,10 +73,13 @@ header
             margin: 10px 0px 0px 0px
 
             li
-                margin-left: 25px
+                margin-left: 28px
 
                 a
                     font-size: 17px
+
+        .header-desktop-phone
+            font-size: 15px
 
     @media(max-width: 991px)
         height: 62px
@@ -87,17 +92,23 @@ header
             margin: 10px 0px 0px 0px
 
             li
-                margin-left: 14px
+                margin-left: 12px
 
                 a
                     padding: 0px 8px 0px 8px
                     font-size: 14px
+
+        .header-desktop-phone
+            font-size: 14px
 
     @media(max-width: 767px)
         padding-right: 0px
         padding-left: 0px
 
         background-color: black
+
+        .header-desktop-phone
+            display: none
 
         .menu-desktop
             display: none
