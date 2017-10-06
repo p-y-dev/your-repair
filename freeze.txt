@@ -1,6 +1,6 @@
 certifi==2017.7.27.1
 chardet==3.0.4
-Django==1.11.5
+Django==1.11.6
 django-admin-sortable2==0.6.16
 django-appconf==1.0.2
 django-compressor==2.2
@@ -8,13 +8,14 @@ easy-thumbnails==2.4.2
 idna==2.6
 libsass==0.13.2
 olefile==0.44
-Pillow==4.2.1
+Pillow==4.3.0
 pkg-resources==0.0.0
 psycopg2==2.7.3.1
 pytz==2017.2
 rcssmin==1.0.6
 requests==2.18.4
 rjsmin==1.0.12
+singlemodeladmin==0.7
 six==1.11.0
 Unidecode==0.4.21
 urllib3==1.22
