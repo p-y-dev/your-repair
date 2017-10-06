@@ -1,6 +1,6 @@
 server {
         listen 80;
-        server_name vash-remontkv.ru www.vash-remontkv.ru;
+        server_name vash-remontkv.ru;
 
         root /home/remont/vash_remont/var/;
 
