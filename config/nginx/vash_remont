@@ -1,14 +1,6 @@
 server {
     listen 80;
     server_name vash-remontkv.ru;
-    location / {
-        return 301 http://$server_name$request_uri;
-    }
-}
-
-server {
-    listen 80;
-    server_name vash-remontkv.ru;
 
     root /home/remont/vash_remont/var/;
 
