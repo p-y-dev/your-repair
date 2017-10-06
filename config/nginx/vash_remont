@@ -2,7 +2,7 @@ server {
     listen 80 default_server;
 	listen [::]:80 default_server;
 
-    server_name vash-remontkv.ru;
+    server_name vash-remontkv.ru www.vash-remontkv.ru;
 
     root /home/remont/vash_remont/var/;
 
