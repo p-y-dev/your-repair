@@ -1,8 +1,8 @@
 server {
         listen 80;
-        server_name 40.68.100.89;
+        server_name 194.58.118.206, vash-remontkv.ru;
 
-        root /home/py/vash_remont/var/;
+        root /home/remont/vash_remont/var/;
 
         client_max_body_size 32m;
 
@@ -18,11 +18,11 @@ server {
 
         location /static {
                 expires 365d;
-                alias /home/py/vash_remont/var/static/;
+                alias /home/remont/vash_remont/var/static/;
         }
 
         location /media {
                 expires 365d;
-                alias /home/py/vash_remont/var/media/;
+                alias /home/remont/vash_remont/var/media/;
         }
 }
