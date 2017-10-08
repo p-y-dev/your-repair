@@ -29,9 +29,23 @@
 
                             {% if galleries|length > 0 %}
                                 <div class="row row-btn">
-                                    <button id="open-gallery" data-toggle="modal" data-target="#modalGallery">
-                                        Посмотреть все работы
-                                    </button>
+                                    <div class="btn-div
+                                        {% if count_videos == 0 %}
+                                            btn-none-video
+                                        {% endif %}
+                                        ">
+                                        <button id="open-gallery" data-toggle="modal" data-target="#modalGallery">
+                                            <i class="fa fa-picture-o" aria-hidden="true"></i> Посмотреть фото работ
+                                        </button>
+                                    </div>
+
+                                    {% if count_videos > 0 %}
+                                        <div class="btn-div btn-div-video">
+                                            <button class="btn-modal-video" id="open-video" data-toggle="modal" data-target="#modalVideo">
+                                                <i class="fa fa-play" aria-hidden="true"></i> Посмотреть видео работ
+                                            </button>
+                                        </div>
+                                    {% endif %}
                                 </div>
                             {% endif %}
 

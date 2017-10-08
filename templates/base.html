@@ -21,6 +21,7 @@
             <link href="{% static 'styles/modal/gallery.sass' %}" rel="stylesheet" type="text/x-sass" />
             <link href="{% static 'styles/modal/application.sass' %}" rel="stylesheet" type="text/x-sass" />
             <link href="{% static 'styles/modal/reviews.sass' %}" rel="stylesheet" type="text/x-sass" />
+            <link href="{% static 'styles/modal/video.sass' %}" rel="stylesheet" type="text/x-sass" />
             {% block styles %}
             {% endblock %}
         {% endcompress %}
@@ -44,6 +45,10 @@
         {% include "modal/reviews/write_reviews.html" %}
         {% include "modal/reviews/all_reviews.html" %}
 
+        {% if count_videos > 0 %}
+            {% include "modal/video/video_modal.html" %}
+        {% endif %}
+
 
         {% if page_history is not True %}
             {% include "footer.html" %}
@@ -59,6 +64,7 @@
             <script src={% static 'js/open_gallery.js' %}></script>
             <script src={% static 'js/application.js' %}></script>
             <script src={% static 'js/create_reviews.js' %}></script>
+            <script src={% static 'js/open_video.js' %}></script>
             {% block js %}
             {% endblock %}
         {% endcompress %}

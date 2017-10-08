@@ -11,6 +11,15 @@ h3 {
   h3 span {
     color: #ffd900; }
 
+.work-items {
+  margin-top: -20px; }
+  .work-items .fa-cog {
+    font-size: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 26vh;
+    color: black; }
+
 .content-block {
   padding: 40px 0px 40px 0px; }
 
@@ -43,15 +52,6 @@ h3 {
   h3 {
     margin-bottom: 20px;
     font-size: 18px; } }
-.gallery-items {
-  margin-top: -20px; }
-  .gallery-items .fa-cog {
-    font-size: 80px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 26vh;
-    color: black; }
-
 .gallery-img {
   width: 25%;
   float: left; }

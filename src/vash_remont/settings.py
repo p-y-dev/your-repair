@@ -50,6 +50,7 @@ INSTALLED_APPS = [
 
     'vash_remont.accounts',
     'vash_remont.gallery',
+    'vash_remont.video',
     'vash_remont.reviews',
     'vash_remont.settings_site'
 ]

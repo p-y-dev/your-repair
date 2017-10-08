@@ -3,6 +3,7 @@ from django.http import JsonResponse
 from django.shortcuts import render
 
 from vash_remont.gallery.models import Gallery, Image
+from vash_remont.video.models import Video
 from vash_remont.reviews.models import Review, APPROVED
 
 from vash_remont.settings_site.models import SettingsSite
@@ -32,6 +33,7 @@ def home_page(request):
     return render(request, "index.html", {
         "main_images": images,
         "galleries": galleries,
+        "count_videos": Video.objects.count(),
 
         "main_reviews": main_reviews,
         "reviews": reviews,

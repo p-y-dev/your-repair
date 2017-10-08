@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^send_application$', send_application, name="send_application"),
 
     url(r'^gallery/', include('vash_remont.gallery.urls', namespace="gallery")),
-
+    url(r'^video/', include('vash_remont.video.urls', namespace="video")),
     url(r'^reviews/', include('vash_remont.reviews.urls', namespace="reviews")),
 ]
 

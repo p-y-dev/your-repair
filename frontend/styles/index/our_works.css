@@ -11,6 +11,15 @@ h3 {
   h3 span {
     color: #ffd900; }
 
+.work-items {
+  margin-top: -20px; }
+  .work-items .fa-cog {
+    font-size: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 26vh;
+    color: black; }
+
 .content-block {
   padding: 40px 0px 40px 0px; }
 
@@ -84,8 +93,15 @@ h3 {
   .our-works button:hover {
     opacity: 1;
     cursor: pointer; }
+.our-works .btn-modal-video {
+  background-color: black !important;
+  color: white !important; }
 .our-works .row-btn {
   margin-top: 25px; }
+  .our-works .row-btn .btn-div {
+    width: 50%; }
+.our-works .btn-none-video {
+  width: 100% !important; }
 @media(max-width: 1199px) {
   .our-works .first-image-div {
     margin-bottom: 0px; } }
@@ -103,6 +119,10 @@ h3 {
     font-size: 16px; }
   .our-works button {
     font-size: 14px;
-    padding: 10px 15px; } }
+    padding: 10px 15px; }
+  .our-works .row-btn .btn-div {
+    width: 100%; }
+  .our-works .row-btn .btn-div-video {
+    margin-top: 25px; } }
 
 /*# sourceMappingURL=our_works.css.map */
