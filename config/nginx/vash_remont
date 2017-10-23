@@ -1,13 +1,23 @@
 server {
     listen 80 default_server;
     listen [::]:80 default_server;
-    server_name vash-remontkv.ru www.vash-remontkv.ru;
-    rewrite ^(.*) https://$server_name$1 permanent;
+	server_name vash-remontkv.ru www.vash-remontkv.ru;
+
+	root /home/remont/vash_remont/var/;
+
+	location / {
+	    return 301 https://$server_name$request_uri;
+	}
+
+	location /.well-known/acme-challenge {
+        root /var/www/letsencrypt;
+    }
 }
 
 server {
     listen 443 ssl default_server;
     server_name vash-remontkv.ru www.vash-remontkv.ru;
+
     ssl_certificate /etc/letsencrypt/live/vash-remontkv.ru/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/vash-remontkv.ru/privkey.pem;
 
@@ -34,9 +44,5 @@ server {
     location /media {
             expires 365d;
             alias /home/remont/vash_remont/var/media/;
-    }
-
-    location /.well-known/acme-challenge {
-       root /var/www/letsencrypt;
     }
 }
