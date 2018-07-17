@@ -2,6 +2,7 @@ Django
 libsass
 django-compressor
 psycopg2
+psycopg2-binary
 Pillow
 easy-thumbnails
 Unidecode
