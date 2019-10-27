@@ -1,6 +1,10 @@
-from django.conf.urls import url
+from django.urls import path
+
 from .views import create_reviews
 
+app_name = 'reviews'
+
+
 urlpatterns = [
-    url(r'^create$', create_reviews, name="create_reviews"),
+    path('create', create_reviews, name="create_reviews"),
 ]

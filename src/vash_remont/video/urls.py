@@ -1,6 +1,10 @@
-from django.conf.urls import url
+from django.urls import path
+
 from .views import get_video
 
+app_name = 'video'
+
+
 urlpatterns = [
-    url(r'^$', get_video, name="get_video"),
+    path('', get_video, name="get_video"),
 ]
