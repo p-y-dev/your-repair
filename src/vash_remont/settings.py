@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '#%u*9xe0n=vsmgx3-lm_xz8dvddc9dsk=g&$g@4^*9-t!7kg(1'
+SECRET_KEY = 'SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -29,8 +29,8 @@ ALLOWED_HOSTS = []
 
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'vash.remontkv@yandex.ru'
-EMAIL_HOST_PASSWORD = '73bSwFKmaHcm'
+EMAIL_HOST_USER = 'dawd.dawd@yandex.ru'
+EMAIL_HOST_PASSWORD = 'ADwdawd'
 EMAIL_USE_SSL = True
 
 # Application definition
@@ -96,9 +96,9 @@ WSGI_APPLICATION = 'vash_remont.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'vash_remont_db',
-        'USER': 'vash_remont_user',
-        'PASSWORD': 'XDHXhb84M2eWik9J',
+        'NAME': 'db',
+        'USER': 'db',
+        'PASSWORD': 'db',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
